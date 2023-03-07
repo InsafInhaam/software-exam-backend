@@ -12,9 +12,9 @@ const PORT = 5000;
 dotenv.config();
 const app = express();
 
-(async () => {
-    await db.sync();
-})();
+// (async () => {
+//     await db.sync();
+// })();
 
 app.use(express.json());
 app.use(cookieParser());
