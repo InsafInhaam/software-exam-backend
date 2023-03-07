@@ -33,12 +33,12 @@ User.associate = function () {
   User.hasMany(Comment, { foreignKey: "commentedBy" });
 };
     
-// (async () => {
-//   await db.sync();
-//   console.log("User table created!");
+(async () => {
+  await db.sync();
+  console.log("User table created!");
 
-//   // Call the association function here
-//   User.associate(db.models);
-// })();
+  // Call the association function here
+  User.associate(db.models);
+})();
 
 export default User;

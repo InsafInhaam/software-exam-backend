@@ -18,7 +18,8 @@ export const getPost = async (req, res) => {
 
 export const createPost = async (req, res) => {
   const { name, description } = req.body;
-  let approved = false; // define and assign a default value for approved
+  let approved = false; 
+  // define and assign a default value for approved
   if (!name || !description) {
     res.status(422).json({ error: "Please add all the fields" });
   }
