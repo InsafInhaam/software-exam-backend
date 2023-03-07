@@ -37,12 +37,12 @@ Comment.associate = function () {
 };
 
 
-(async () => {
-  await db.sync();
-  console.log("Comment table created!");
+// (async () => {
+//   await db.sync();
+//   console.log("Comment table created!");
 
-  // Call the association function here
-  Comment.associate(db.models);
-})();
+//   // Call the association function here
+//   Comment.associate(db.models);
+// })();
 
 export default Comment;

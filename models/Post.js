@@ -37,12 +37,12 @@ Post.associate = function () {
 };
 
 
-(async () => {
-  await db.sync();
-  console.log("Post table created!");
+// (async () => {
+//   await db.sync();
+//   console.log("Post table created!");
 
-  // Call the association function here
-  Post.associate(db.models);
-})();
+//   // Call the association function here
+//   Post.associate(db.models);
+// })();
 
 export default Post;
